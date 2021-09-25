@@ -1,0 +1,10 @@
+SetProp, 1E050,   -1E050, 1E050, -1E050, 16777215, 16777215, 0, 4
+Curve, 1, 0, 2, 0, 0, 1, " Harmonic", 60, 159.85446
+Curve, 1, 255, 2, 0, 0, 1, " V1", 60, -0.27167726
+Curve, 1, 16711680, 2, 0, 0, 1, " VAngle1", 60, 159.75525
+Curve, 1, 16711935, 2, 0, 0, 1, " V2", 60, -120.1925
+Curve, 1, 32768, 2, 0, 0, 1, " VAngle2", 60, 159.99606
+Xlabel, "Frequency, Hz"
+Ylabel, "Mag"
+ChartCaption, "mpcc:  V1,  VAngle1,  V2,  VAngle2,  V3"
+PctRim, 2

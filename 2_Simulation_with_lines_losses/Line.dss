@@ -1,0 +1,131 @@
+!WireData definition
+New WireData.700_MCM DIAM=0.964  RAC=0.0305 Runits=kft radunits=in Normamps=812
+New WireData.1/0_AWG DIAM=0.368  RAC=0.2    Runits=kft radunits=in Normamps=247
+New WireData.1_AWG   DIAM=0.354  RAC=0.268  Runits=kft radunits=in Normamps=212
+New WireData.4_AWG   DIAM=0.250  RAC=0.515  Runits=kft radunits=in Normamps=140
+New WireData.12_AWG  DIAM=0.0808 RAC=1.588  Runits=kft radunits=in Normamps=20
+
+
+
+!LineGeometry definition
+New LineGeometry.geo1 nconds=3 nphases=3 
+~ cond=1 wire=700_MCM x=0  h=150 units=cm
+~ cond=2 wire=700_MCM x=3  h=153 units=cm 
+~ cond=3 wire=700_MCM x=-3 h=153 units=cm
+New LineGeometry.geo2 nconds=3 nphases=3 
+~ cond=1 wire=1/0_AWG x=0  h=150 units=cm
+~ cond=2 wire=1/0_AWG x=3  h=153 units=cm 
+~ cond=3 wire=1/0_AWG x=-3 h=153 units=cm
+New LineGeometry.geo3 nconds=3 nphases=3 
+~ cond=1 wire=1_AWG x=0  h=150 units=cm
+~ cond=2 wire=1_AWG x=3  h=153 units=cm 
+~ cond=3 wire=1_AWG x=-3 h=153 units=cm
+New LineGeometry.geo4 nconds=3 nphases=3 
+~ cond=1 wire=4_AWG x=0  h=150 units=cm
+~ cond=2 wire=4_AWG x=3  h=153 units=cm 
+~ cond=3 wire=4_AWG x=-3 h=153 units=cm
+New LineGeometry.geo5 nconds=3 nphases=3 
+~ cond=1 wire=12_AWG x=0  h=150 units=cm
+~ cond=2 wire=12_AWG x=3  h=153 units=cm 
+~ cond=3 wire=12_AWG x=-3 h=153 units=cm
+
+
+
+
+
+! Lines definition
+New "Line.line_0"  phases=3 bus1=main_switch_panel.1.2.3 bus2=dcfc.1.2.3   
+New "Line.line_1"  phases=3 bus1=switch_panel_1.1.2.3    bus2=5.1.2.3    Geometry=geo3 Length=10 units=m
+New "Line.line_2"  phases=3 bus1=switch_panel_1.1.2.3    bus2=17.1.2.3   Geometry=geo3 Length=10 units=m
+New "Line.line_3"  phases=3 bus1=switch_panel_1.1.2.3    bus2=2x19.1.2.3 Geometry=geo1 Length=10 units=m 
+New "Line.line_4"  phases=3 bus1=2x19.1.2.3    			 bus2=26.1.2.3   Geometry=geo2 Length=5 units=m
+New "Line.line_5"  phases=3 bus1=2x19.1.2.3    			 bus2=25.1.2.3   Geometry=geo2 Length=5 units=m
+New "Line.line_6"  phases=3 bus1=26.1.2.3    			 bus2=32.1.2.3   Geometry=geo4 Length=5 units=m
+New "Line.line_7"  phases=3 bus1=26.1.2.3    			 bus2=47.1.2.3   Geometry=geo4 Length=5 units=m
+New "Line.line_8"  phases=3 bus1=25.1.2.3    			 bus2=61.1.2.3   Geometry=geo4 Length=5 units=m
+New "Line.line_9"  phases=3 bus1=25.1.2.3    			 bus2=76.1.2.3   Geometry=geo4 Length=5 units=m
+!Lines related to line_1(8 chargers)
+New "Line.line_10" phases=3 bus1=5.1.2.3 				 bus2=6.1.2.3    Geometry=geo3 Length=2.6 units=m
+New "Line.line_11" phases=3 bus1=6.1.2.3 				 bus2=7.1.2.3    Geometry=geo3 Length=2.6 units=m
+New "Line.line_12" phases=3 bus1=7.1.2.3 				 bus2=8.1.2.3    Geometry=geo3 Length=2.6 units=m
+New "Line.line_13" phases=3 bus1=5.1.2.3 			     bus2=1.1.2.3    Geometry=geo5 Length=0.5 units=m
+New "Line.line_14" phases=3 bus1=5.1.2.3 				 bus2=9.1.2.3    Geometry=geo5 Length=0.5 units=m
+New "Line.line_15" phases=3 bus1=6.1.2.3 				 bus2=2.1.2.3    Geometry=geo5 Length=0.5 units=m
+New "Line.line_16" phases=3 bus1=6.1.2.3 				 bus2=10.1.2.3   Geometry=geo5 Length=0.5 units=m
+New "Line.line_17" phases=3 bus1=7.1.2.3 				 bus2=3.1.2.3    Geometry=geo5 Length=0.5 units=m
+New "Line.line_18" phases=3 bus1=7.1.2.3 				 bus2=11.1.2.3   Geometry=geo5 Length=0.5 units=m
+New "Line.line_19" phases=3 bus1=8.1.2.3 				 bus2=4.1.2.3    Geometry=geo5 Length=0.5 units=m
+New "Line.line_20" phases=3 bus1=8.1.2.3 			 	 bus2=12.1.2.3   Geometry=geo5 Length=0.5 units=m
+!Lines related to line_2(8 chargers)
+New "Line.line_21" phases=3 bus1=17.1.2.3				 bus2=18.1.2.3   Geometry=geo3 Length=2.6 units=m
+New "Line.line_22" phases=3 bus1=18.1.2.3				 bus2=19.1.2.3   Geometry=geo3 Length=2.6 units=m
+New "Line.line_23" phases=3 bus1=19.1.2.3				 bus2=20.1.2.3   Geometry=geo3 Length=2.6 units=m
+New "Line.line_24" phases=3 bus1=17.1.2.3				 bus2=13.1.2.3   Geometry=geo5 Length=0.5 units=m
+New "Line.line_25" phases=3 bus1=17.1.2.3 				 bus2=21.1.2.3   Geometry=geo5 Length=0.5 units=m
+New "Line.line_26" phases=3 bus1=18.1.2.3 				 bus2=14.1.2.3   Geometry=geo5 Length=0.5 units=m
+New "Line.line_27" phases=3 bus1=18.1.2.3				 bus2=22.1.2.3   Geometry=geo5 Length=0.5 units=m
+New "Line.line_28" phases=3 bus1=19.1.2.3				 bus2=15.1.2.3   Geometry=geo5 Length=0.5 units=m
+New "Line.line_29" phases=3 bus1=19.1.2.3				 bus2=23.1.2.3   Geometry=geo5 Length=0.5 units=m
+New "Line.line_30" phases=3 bus1=20.1.2.3				 bus2=16.1.2.3   Geometry=geo5 Length=0.5 units=m
+New "Line.line_31" phases=3 bus1=20.1.2.3				 bus2=24.1.2.3   Geometry=geo5 Length=0.5 units=m
+!Lines related to line_3 (2x19 chargers)
+	!First 19 chargers (related to line_4)
+		!First slot (related to line_6)
+New "Line.line_32" phases=3 bus1=32.1.2.3				 bus2=33.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_33" phases=3 bus1=33.1.2.3				 bus2=34.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_34" phases=3 bus1=34.1.2.3				 bus2=35.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_35" phases=3 bus1=35.1.2.3				 bus2=36.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_36" phases=3 bus1=32.1.2.3				 bus2=27.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_37" phases=3 bus1=32.1.2.3				 bus2=37.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_38" phases=3 bus1=33.1.2.3				 bus2=28.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_39" phases=3 bus1=33.1.2.3				 bus2=38.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_40" phases=3 bus1=34.1.2.3				 bus2=29.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_41" phases=3 bus1=34.1.2.3				 bus2=39.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_42" phases=3 bus1=35.1.2.3				 bus2=30.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_43" phases=3 bus1=35.1.2.3				 bus2=40.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_44" phases=3 bus1=36.1.2.3				 bus2=31.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_45" phases=3 bus1=36.1.2.3				 bus2=41.1.2.3	 Geometry=geo5 Length=0.5 units=m
+		!Second slot (related to line_7)
+New "Line.line_46" phases=3 bus1=47.1.2.3				 bus2=48.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_47" phases=3 bus1=48.1.2.3				 bus2=49.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_48" phases=3 bus1=49.1.2.3				 bus2=50.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_49" phases=3 bus1=50.1.2.3				 bus2=51.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_50" phases=3 bus1=47.1.2.3				 bus2=42.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_51" phases=3 bus1=47.1.2.3				 bus2=52.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_52" phases=3 bus1=48.1.2.3				 bus2=43.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_53" phases=3 bus1=48.1.2.3				 bus2=53.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_54" phases=3 bus1=49.1.2.3				 bus2=44.1.2.3 	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_55" phases=3 bus1=49.1.2.3				 bus2=54.1.2.3 	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_56" phases=3 bus1=50.1.2.3				 bus2=45.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_57" phases=3 bus1=50.1.2.3				 bus2=55.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_58" phases=3 bus1=51.1.2.3				 bus2=46.1.2.3	 Geometry=geo5 Length=0.5 units=m
+	!Second 19 chargers (related to line_5)
+		!First slot (related to line_8)
+New "Line.line_59" phases=3 bus1=61.1.2.3				 bus2=62.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_60" phases=3 bus1=62.1.2.3				 bus2=63.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_61" phases=3 bus1=63.1.2.3				 bus2=64.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_62" phases=3 bus1=64.1.2.3				 bus2=65.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_63" phases=3 bus1=61.1.2.3				 bus2=56.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_64" phases=3 bus1=61.1.2.3				 bus2=66.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_65" phases=3 bus1=62.1.2.3				 bus2=57.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_66" phases=3 bus1=62.1.2.3				 bus2=67.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_67" phases=3 bus1=63.1.2.3				 bus2=58.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_68" phases=3 bus1=63.1.2.3				 bus2=68.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_69" phases=3 bus1=64.1.2.3				 bus2=59.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_70" phases=3 bus1=64.1.2.3				 bus2=69.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_71" phases=3 bus1=65.1.2.3				 bus2=60.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_72" phases=3 bus1=65.1.2.3				 bus2=70.1.2.3	 Geometry=geo5 Length=0.5 units=m
+		!Second slot (related to line_9)
+New "Line.line_73" phases=3 bus1=76.1.2.3				 bus2=77.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_74" phases=3 bus1=77.1.2.3				 bus2=78.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_75" phases=3 bus1=78.1.2.3				 bus2=79.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_76" phases=3 bus1=79.1.2.3				 bus2=80.1.2.3	 Geometry=geo4 Length=2.6 units=m
+New "Line.line_77" phases=3 bus1=76.1.2.3				 bus2=71.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_78" phases=3 bus1=76.1.2.3				 bus2=81.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_79" phases=3 bus1=77.1.2.3				 bus2=72.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_80" phases=3 bus1=77.1.2.3				 bus2=82.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_81" phases=3 bus1=78.1.2.3				 bus2=73.1.2.3 	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_82" phases=3 bus1=78.1.2.3				 bus2=83.1.2.3 	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_83" phases=3 bus1=79.1.2.3				 bus2=74.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_84" phases=3 bus1=79.1.2.3				 bus2=84.1.2.3	 Geometry=geo5 Length=0.5 units=m
+New "Line.line_85" phases=3 bus1=80.1.2.3				 bus2=75.1.2.3	 Geometry=geo5 Length=0.5 units=m

@@ -1,0 +1,166 @@
+
+ISOLATED CIRCUIT ELEMENT REPORT
+
+
+***  THE FOLLOWING BUSES HAVE NO CONNECTION TO THE SOURCE ***
+
+
+***********  THE FOLLOWING SUB NETWORKS ARE ISOLATED ************
+
+
+***********  THE FOLLOWING ENABLED ELEMENTS ARE ISOLATED ************
+
+
+***  THE FOLLOWING BUSES ARE NOT CONNECTED TO ANY POWER DELIVERY ELEMENT ***
+
+
+***********  CONNECTED CIRCUIT ELEMENT TREE ************
+
+(Lexical Level) Element name
+
+(0) Vsource.source
+(1) Transformer.t0
+(2) Transformer.t2
+[SHUNT], Load.switch_panel_2
+(2) Transformer.t1
+(3) Line.line_3
+(4) Line.line_5
+(5) Line.line_9
+(6) Line.line_78
+[SHUNT], Load.ca-510
+(6) Line.line_77
+[SHUNT], Load.ca-505
+(6) Line.line_73
+(7) Line.line_80
+[SHUNT], Load.ca-511
+(7) Line.line_79
+[SHUNT], Load.ca-506
+(7) Line.line_74
+(8) Line.line_82
+[SHUNT], Load.ca-512
+(8) Line.line_81
+[SHUNT], Load.ca-507
+(8) Line.line_75
+(9) Line.line_84
+[SHUNT], Load.ca-513
+(9) Line.line_83
+[SHUNT], Load.ca-508
+(9) Line.line_76
+(10) Line.line_85
+[SHUNT], Load.ca-509
+(5) Line.line_8
+(6) Line.line_64
+[SHUNT], Load.ca-500
+(6) Line.line_63
+[SHUNT], Load.ca-495
+(6) Line.line_59
+(7) Line.line_66
+[SHUNT], Load.ca-501
+(7) Line.line_65
+[SHUNT], Load.ca-496
+(7) Line.line_60
+(8) Line.line_68
+[SHUNT], Load.ca-502
+(8) Line.line_67
+[SHUNT], Load.ca-497
+(8) Line.line_61
+(9) Line.line_70
+[SHUNT], Load.ca-503
+(9) Line.line_69
+[SHUNT], Load.ca-498
+(9) Line.line_62
+(10) Line.line_72
+[SHUNT], Load.ca-504
+(10) Line.line_71
+[SHUNT], Load.ca-499
+(4) Line.line_4
+(5) Line.line_7
+(6) Line.line_51
+[SHUNT], Load.ca-491
+(6) Line.line_50
+[SHUNT], Load.ca-325
+(6) Line.line_46
+(7) Line.line_53
+[SHUNT], Load.ca-492
+(7) Line.line_52
+[SHUNT], Load.ca-326
+(7) Line.line_47
+(8) Line.line_55
+[SHUNT], Load.ca-493
+(8) Line.line_54
+[SHUNT], Load.ca-327
+(8) Line.line_48
+(9) Line.line_57
+[SHUNT], Load.ca-494
+(9) Line.line_56
+[SHUNT], Load.ca-489
+(9) Line.line_49
+(10) Line.line_58
+[SHUNT], Load.ca-490
+(5) Line.line_6
+(6) Line.line_37
+[SHUNT], Load.ca-320
+(6) Line.line_36
+[SHUNT], Load.ca-315
+(6) Line.line_32
+(7) Line.line_39
+[SHUNT], Load.ca-321
+(7) Line.line_38
+[SHUNT], Load.ca-316
+(7) Line.line_33
+(8) Line.line_41
+[SHUNT], Load.ca-322
+(8) Line.line_40
+[SHUNT], Load.ca-317
+(8) Line.line_34
+(9) Line.line_43
+[SHUNT], Load.ca-323
+(9) Line.line_42
+[SHUNT], Load.ca-318
+(9) Line.line_35
+(10) Line.line_45
+[SHUNT], Load.ca-324
+(10) Line.line_44
+[SHUNT], Load.ca-319
+(3) Line.line_2
+(4) Line.line_25
+[SHUNT], Load.ca-311
+(4) Line.line_24
+[SHUNT], Load.ca-307
+(4) Line.line_21
+(5) Line.line_27
+[SHUNT], Load.ca-312
+(5) Line.line_26
+[SHUNT], Load.ca-308
+(5) Line.line_22
+(6) Line.line_29
+[SHUNT], Load.ca-313
+(6) Line.line_28
+[SHUNT], Load.ca-309
+(6) Line.line_23
+(7) Line.line_31
+[SHUNT], Load.ca-314
+(7) Line.line_30
+[SHUNT], Load.ca-310
+(3) Line.line_1
+(4) Line.line_14
+[SHUNT], Load.ca-303
+(4) Line.line_13
+[SHUNT], Load.ca-148
+(4) Line.line_10
+(5) Line.line_16
+[SHUNT], Load.ca-304
+(5) Line.line_15
+[SHUNT], Load.ca-149
+(5) Line.line_11
+(6) Line.line_18
+[SHUNT], Load.ca-305
+(6) Line.line_17
+[SHUNT], Load.ca-212
+(6) Line.line_12
+(7) Line.line_20
+[SHUNT], Load.ca-306
+(7) Line.line_19
+[SHUNT], Load.ca-213
+(2) Line.line_0
+[SHUNT], Load.dcfc
