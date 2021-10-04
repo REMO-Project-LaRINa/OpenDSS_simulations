@@ -1,0 +1,19 @@
+Clear
+New Circuit.ACN_Infrastructure
+
+
+Redirect Vsource.dss
+Redirect Line.DSS
+Redirect TCC_Curve.DSS
+Redirect Spectrum.DSS
+Redirect Transformer.DSS
+Redirect Load.DSS
+MakeBusList
+Redirect BusVoltageBases.dss  ! set voltage bases
+Buscoords buscoords.dss
+GIScoords GIScoords.dss
+
+
+
+solve
+!plot circuit Power max=2000 n n C1=$00FF0000  labels = y   !!!! Run this line to see the circuit plot

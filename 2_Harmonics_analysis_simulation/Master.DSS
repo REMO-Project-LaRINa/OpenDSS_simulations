@@ -1,0 +1,25 @@
+Clear
+New Circuit.ACN_Infrastructure
+
+
+Redirect Vsource.dss
+Redirect Line.DSS
+Redirect TCC_Curve.DSS
+Redirect Spectrum.DSS
+Redirect Transformer.DSS
+Redirect Load.DSS
+MakeBusList
+Redirect BusVoltageBases.dss  ! set voltage bases
+Buscoords buscoords.dss
+GIScoords GIScoords.dss
+
+New monitor.MPCC element=transformer.t1 mode=0
+
+
+solve
+
+set mode=harmonicT
+
+solve
+
+export monitor MPCC
