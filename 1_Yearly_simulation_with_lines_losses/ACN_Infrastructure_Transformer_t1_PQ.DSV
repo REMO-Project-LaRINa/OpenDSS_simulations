@@ -14,20 +14,20 @@ Width, 3
 FStyle, 0
 Move, 0, 50
 Draw, 100, 50
-Center,  15, 52, 10, "20.1365 + j"
-Center,  60, 52, 10, "0.646542 kVA"
+Center,  15, 52, 10, "3.35862 + j"
+Center,  60, 52, 10, "0.0230594 kVA"
 Center,  90, 52, 10, " ->"
 FStyle, 0
 Move, 0, 40
 Draw, 100, 40
-Center,  15, 42, 10, "16.976 + j"
-Center,  60, 42, 10, "2.19256 kVA"
+Center,  15, 42, 10, "1.67025 + j"
+Center,  60, 42, 10, "0.978929 kVA"
 Center,  90, 42, 10, " ->"
 FStyle, 0
 Move, 0, 30
 Draw, 100, 30
-Center,  15, 32, 10, "17.2386 + j"
-Center,  60, 32, 10, "-1.30797 kVA"
+Center,  15, 32, 10, "1.68805 + j"
+Center,  60, 32, 10, "-0.960462 kVA"
 Center,  90, 32, 10, " ->"
 Width, 1
 FStyle, 0
@@ -45,20 +45,20 @@ FStyle, 0
 Move, 300, 50
 Draw, 200, 50
 Center,  210, 52, 10, "<- "
-Center,  240, 52, 10, "-20.1485 + j"
-Center,  280, 52, 10, "-0.0535943 kVA"
+Center,  240, 52, 10, "-3.36294 + j"
+Center,  280, 52, 10, "-0.0045168 kVA"
 FStyle, 0
 Move, 300, 40
 Draw, 200, 40
 Center,  210, 42, 10, "<- "
-Center,  240, 42, 10, "-20.0564 + j"
-Center,  280, 42, 10, "-0.0662089 kVA"
+Center,  240, 42, 10, "-3.35219 + j"
+Center,  280, 42, 10, "-0.00531367 kVA"
 FStyle, 0
 Move, 300, 30
 Draw, 200, 30
 Center,  210, 32, 10, "<- "
-Center,  240, 32, 10, "-14.0653 + j"
-Center,  280, 32, 10, "0.00376443 kVA"
+Center,  240, 32, 10, "1.20037E-006 + j"
+Center,  280, 32, 10, "1.49113E-005 kVA"
 Width, 1
 FStyle, 0
 Move, 300, 20
